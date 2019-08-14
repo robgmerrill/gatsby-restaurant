@@ -18,10 +18,12 @@ export default class Navbar extends Component {
     }
 
     render() {
+        console.log(this.state.isNavbarOpen);
+
         return (
             <NavWrapper>
                 <NavbarHeader handleNavbar={this.handleNavbar} />
-                <NavbarLinks navbarOpen={this.state.isNavbarOpen} />
+                <NavbarLinks isNavbarOpen={this.state.isNavbarOpen} />
                 <NavbarIcons />
             </NavWrapper>
         )

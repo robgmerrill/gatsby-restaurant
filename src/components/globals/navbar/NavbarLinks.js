@@ -30,6 +30,7 @@ export default class NavbarLinks extends Component {
         ]
     }
     render() {
+        console.log("This", this.props.isNavbarOpen)
         return (
             <LinkWrapper open={this.props.isNavbarOpen}>
                 {
@@ -58,5 +59,18 @@ const LinkWrapper = styled.ul`
         display: block;
         text-decoration: none;
         padding: 0.5rem 1rem;
+        color: ${styles.colors.mainGrey};
+        font-wight: 700;
+        text-transform: capitalize;
+        cursor: pointer;
+        ${styles.transDefault};
     }
+
+    .nav-link:hover {
+        background: ${styles.colors.mainGrey};
+        color: ${styles.colors.mainYellow};
+        padding: 0.5rem 1rem 0.5rem 1.3rem;
+    }
+    height: ${props => (props.open ? '152px' : '0px')};
+overflow: hidden;
 `
