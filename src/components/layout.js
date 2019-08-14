@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { createGlobalStyle } from 'styled-components'
 import Navbar from "./globals/navbar/Navbar"
-// import './layout.css'
+import Footer from '../components/globals/Footer'
 
 const Layout = ({ children }) => {
   return (
@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Navbar />
       {children}
+      <Footer />
     </React.Fragment>
   )
 }
