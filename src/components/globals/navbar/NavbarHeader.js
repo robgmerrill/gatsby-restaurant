@@ -22,8 +22,6 @@ export default class NavbarHeader extends Component {
     }
 }
 
-const red = 'red';
-
 const HeaderWrapper = styled.div`
     padding: 0.4rem 1rem;
     display: flex;
