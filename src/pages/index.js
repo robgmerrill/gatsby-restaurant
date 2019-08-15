@@ -5,17 +5,19 @@ import { HomeHeader, Banner, BannerButton } from '../utils'
 import img from '../images/bcg/homeBcg.jpeg'
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import Gallery from '../components/HomePageComponents/Gallery'
+import Menu from '../components/HomePageComponents/Menu'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HomeHeader img={img}>
-      <Banner title="Seattle Fish Shop" subtitle="3040 17th Ave W, Seattle, WA 98119">
+      <Banner title="Seattle Food Shop" subtitle="3040 17th Ave W, Seattle, WA 98119">
         <BannerButton style={{ margin: '2rem auto' }}>menu</BannerButton>
       </Banner>
     </HomeHeader>
     <QuickInfo />
     <Gallery />
+    <Menu />
   </Layout>
 )
 
